@@ -36,4 +36,4 @@ RUN npx --yes playwright install firefox &&\
 
 USER blessuser
 
-CMD xvfb-run --server-args='-screen 0 1920x1080x24' ./scripts/start.sh
+CMD ./scripts/start.sh

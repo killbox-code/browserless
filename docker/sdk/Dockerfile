@@ -27,4 +27,4 @@ RUN npm run build
 # Back to non-privileged user
 USER blessuser
 
-CMD xvfb-run --server-args='-screen 0 1920x1080x24' npm start
+CMD npm start
