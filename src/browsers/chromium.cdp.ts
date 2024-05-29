@@ -184,6 +184,9 @@ export class ChromiumCDP extends EventEmitter {
       executablePath: this.executablePath,
     };
 
+    // [KS] Disable headless regardless of configured option
+    finalOptions.headless = false;
+
     if (this.blockAds) {
       // Necessary to load extensions
       finalOptions.headless = false;

@@ -1,5 +1,5 @@
 ARG VERSION=latest
-FROM ghcr.io/browserless/base:$VERSION
+FROM ghcr.io/killbox-code/base:$VERSION
 LABEL org.opencontainers.image.source https://github.com/browserless/browserless
 
 # Install Fonts
@@ -37,4 +37,4 @@ RUN npx --yes playwright install webkit &&\
 
 USER blessuser
 
-CMD ["./scripts/start.sh"]
+CMD xvfb-run --server-args='-screen 0 1920x1080x24' ./scripts/start.sh

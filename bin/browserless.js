@@ -282,9 +282,9 @@ const buildDocker = async () => {
   const from =
     argSwitches.from ||
     (await prompt(
-      'Which docker image do you want to use (defaults to: ghcr.io/browserless/multi)?',
+      'Which docker image do you want to use (defaults to: ghcr.io/killbox-code/multi)?',
     )) ||
-    'ghcr.io/browserless/multi';
+    'ghcr.io/killbox-code/multi';
 
   const action =
     argSwitches.action ||
@@ -435,7 +435,7 @@ const help = async () => {
           in that it can be either interactive or use the switches listed below.
 
         Options:
-          --from        The Browserless docker image to extend from (ghcr.io/browserless/multi:latest).
+          --from        The Browserless docker image to extend from (ghcr.io/killbox-code/multi:latest).
           --action      One of "push" or "load" to load or push to a registry.
           --tag         The full tag, including version, to name the image (IE: my-bless/chromium:latest).
           --platform    A comma-separated list of platforms to build for.

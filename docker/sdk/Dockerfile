@@ -1,4 +1,4 @@
-ARG FROM=ghcr.io/browserless/multi:latest
+ARG FROM=ghcr.io/killbox-code/multi:latest
 
 FROM ${FROM}
 
@@ -27,4 +27,4 @@ RUN npm run build
 # Back to non-privileged user
 USER blessuser
 
-CMD ["npm", "start"]
+CMD xvfb-run --server-args='-screen 0 1920x1080x24' npm start

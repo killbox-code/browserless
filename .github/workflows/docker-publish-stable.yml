@@ -32,7 +32,7 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           file: ./docker/base/Dockerfile
           tags: |
-            ghcr.io/browserless/base:${{github.ref_name}}
+            ghcr.io/killbox-code/base:${{github.ref_name}}
           context: .
           push: true
           platforms: |
@@ -47,7 +47,7 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           file: ./docker/chromium/Dockerfile
           tags: |
-            ghcr.io/browserless/chromium:${{github.ref_name}}
+            ghcr.io/killbox-code/chromium:${{github.ref_name}}
           context: .
           push: true
           platforms: |
@@ -62,7 +62,7 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           file: ./docker/chrome/Dockerfile
           tags: |
-            ghcr.io/browserless/chrome:${{github.ref_name}}
+            ghcr.io/killbox-code/chrome:${{github.ref_name}}
           context: .
           push: true
           platforms: |
@@ -76,7 +76,7 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           file: ./docker/firefox/Dockerfile
           tags: |
-            ghcr.io/browserless/firefox:${{github.ref_name}}
+            ghcr.io/killbox-code/firefox:${{github.ref_name}}
           context: .
           push: true
           platforms: |
@@ -91,7 +91,7 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           file: ./docker/webkit/Dockerfile
           tags: |
-            ghcr.io/browserless/webkit:${{github.ref_name}}
+            ghcr.io/killbox-code/webkit:${{github.ref_name}}
           context: .
           push: true
           platforms: |
@@ -106,7 +106,7 @@ jobs:
           builder: ${{ steps.buildx.outputs.name }}
           file: ./docker/multi/Dockerfile
           tags: |
-            ghcr.io/browserless/multi:${{github.ref_name}}
+            ghcr.io/killbox-code/multi:${{github.ref_name}}
           context: .
           push: true
           platforms: |
